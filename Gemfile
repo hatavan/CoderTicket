@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.3.1'
+#ruby '2.3.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
@@ -32,7 +32,7 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.1.0'
 end
 
-gem 'bootstrap', '~> 4.0.0.alpha5'
+gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'simple_form'
 gem 'better_errors', group: :development
 gem 'font-awesome-rails'
@@ -47,9 +47,12 @@ gem 'font-kit-rails', '~> 1.2.0'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'factory_girl_rails'
+  gem 'faker'
   gem 'rspec-rails', '~> 3.5', '>= 3.5.2'
   gem 'simplecov', '~> 0.12.0', require: false
   gem 'guard-rspec', require: false
+  # gem 'database_cleaner'
 end
 
 group :development do
@@ -57,6 +60,8 @@ group :development do
   gem 'web-console'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
+  # gem 'spring'
+  gem 'spring-commands-rspec'
+  gem 'spring-watcher-listen', '~> 2.0.0'
 end
 

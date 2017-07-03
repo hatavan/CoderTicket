@@ -1,9 +1,9 @@
-# Homework 3 - *Name of App*
+# Homework 3 - *Coder Ticket*
 
-**Name of your app** is a Ruby on Rails application that allows users to create and buy tickets to cool events.
+**Coder Ticket** is a Ruby on Rails application that allows users to create and buy tickets to cool events.
 
-- Submitted by: **Your Name Here**
-- Time spent: **X** hours
+- Submitted by: **Ha Ta**
+- Time spent: **12** hours
 - URL: **Insert your Heroku URL here**
 - SimpleCov Test Coverage: [coverage/index.html][coverage][index.html]
 
@@ -12,7 +12,7 @@
 The following **required** functionality is complete:
 
 * [x] Implement required user stories
-* [ ] 10 model tests, 2 route tests, 2 controller tests, 2 view tests.
+* [x] 10 model tests, 2 route tests, 2 controller tests, 2 view tests.
 
 The person with best test coverage will win a small present from the instructor :)
 
@@ -47,13 +47,13 @@ The person with best test coverage will win a small present from the instructor 
         * Write a test to make sure only an event creator can publish an event
 * [x] Users can create ticket types for that event.
     * **HINT**: make sure you understand what a ticket tpe is. Ask if not clear.
-* [ ] Users can create venues.
+* [x] Users can create venues.
 * [x] An event must have at least one `ticket_type` defined before it can be published.
     * **HINT**: add `Event#have_enough_ticket_types?` (and test it)
 * [x] User can see a list of events he or she has created.
     * Suggestions
         * You can use `/events/mine` [collection routes](http://guides.rubyonrails.org/routing.html#adding-more-restful-actions)
-* [ ] Users can edit their event after creation. But only the user who created the event can edit the event.
+* [x] Users can edit their event after creation. But only the user who created the event can edit the event.
     * **HINT**: use a `before_action :check_event_changing_permission` to redirect users to event page with a flash error if applicable.
 
 ### Optional Stories
@@ -73,7 +73,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright 2017 Hata
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.

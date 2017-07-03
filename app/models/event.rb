@@ -8,8 +8,13 @@ class Event < ActiveRecord::Base
   #validates_uniqueness_of :name, uniqueness: {scope: [:venue, :starts_at]}
 
   def self.upcoming
-    where("starts_at > (?) and publish = true",Time.now)
+    where("starts_at > (?)", Time.now).published
   end
+
+  def self.published
+    where(publish: true)
+  end
+
   def upcoming?
     starts_at > Time.now && self.publish
   end

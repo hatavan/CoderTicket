@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+<nav class="navbar fixed-top navbar-dark bg-inverse">
   <a class="navbar-brand" href="<%= root_path %>">Coder Ticket</a>
   <ul class="nav navbar-nav">
 
@@ -36,8 +36,9 @@
     </li>
   </ul>
 </nav>
-
-<%= yield %>
-
+<div class="container">
+  <%= flash_messages %>
+  <%= yield %>
+</div>  
 </body>
 </html>
