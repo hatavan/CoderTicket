@@ -4,7 +4,7 @@
 
 - Submitted by: **Ha Ta**
 - Time spent: **12** hours
-- URL: **Insert your Heroku URL here**
+- URL: **https://hata-coder-ticket.herokuapp.com**
 - SimpleCov Test Coverage: [coverage/index.html][coverage][index.html]
 
 ## User Stories
